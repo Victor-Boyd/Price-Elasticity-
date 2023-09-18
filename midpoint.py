@@ -1,10 +1,10 @@
 import math
 
 # Input values
-price1 = 210
-price2 = 105
-quantity1 = 12
-quantity2 = 30
+price1 = 50
+price2 = 175
+quantity1 = 56
+quantity2 = 36
 
 # Calculating the midpoint of price and quantity
 midpointprice = (price1 + price2) / 2
@@ -13,8 +13,12 @@ midpointquantity = (quantity1 + quantity2) / 2
 # Calculating percentage change in quantity demanded
 quantitypercentagechange = (quantity2 - quantity1) / midpointquantity
 
+print ("Percent change in quantity =",quantitypercentagechange*100,"%")
+
 # Calculating percentage change in price
 pricepercentagechange = (price2 - price1) / midpointprice
+
+print ("Percent change in price =",pricepercentagechange*100,"%")
 
 # Calculating Price elasticity
 priceelasticity = quantitypercentagechange / pricepercentagechange
